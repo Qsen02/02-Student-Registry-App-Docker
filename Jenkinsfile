@@ -8,6 +8,12 @@ pipeline {
             }
         }
 
+        stage("Start app"){
+            steps{
+                sh 'nohup npm start'
+            }
+        }
+
         stage("Tests"){
             steps{
                 sh 'npm test'
