@@ -10,7 +10,8 @@ pipeline {
 
         stage("Start app"){
             steps{
-                bat 'npm start &'
+                bat 'npm start'
+                bat 'timeout /t 5'
             }
         }
 
