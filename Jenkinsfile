@@ -10,7 +10,7 @@ pipeline {
 
         stage("Start app"){
             steps{
-                sh 'npm start'
+                sh 'npm start &'
             }
         }
 
