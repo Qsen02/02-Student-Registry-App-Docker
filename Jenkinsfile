@@ -10,8 +10,7 @@ pipeline {
 
         stage("Start app"){
             steps{
-                bat 'start /b npm start'
-                bat 'timeout /t 5'
+                bat 'start "" node index.js'
             }
         }
 
