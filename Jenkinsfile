@@ -10,7 +10,7 @@ pipeline {
 
         stage("Start app"){
             steps{
-                bat 'nohup npm start'
+                bat 'npm start &'
             }
         }
 
