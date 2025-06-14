@@ -4,19 +4,19 @@ pipeline {
     stages{
         stage("Build"){
             steps {
-                sh npm i
+                sh 'npm i'
             }
         }
 
         stage("Start app"){
             steps{
-                sh npm start
+                sh 'npm start'
             }
         }
 
         stage("Tests"){
             steps{
-                sh npm test
+                sh 'npm test'
             }
         }
     }
