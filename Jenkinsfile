@@ -4,19 +4,19 @@ pipeline {
     stages{
         stage("Build"){
             steps {
-                sh 'npm i'
+                bat 'npm i'
             }
         }
 
         stage("Start app"){
             steps{
-                sh 'nohup npm start'
+                bat 'nohup npm start'
             }
         }
 
         stage("Tests"){
             steps{
-                sh 'npm test'
+                bat 'npm test'
             }
         }
     }
