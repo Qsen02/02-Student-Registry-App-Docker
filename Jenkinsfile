@@ -8,12 +8,6 @@ pipeline {
             }
         }
 
-        stage("Start app"){
-            steps{
-                sh 'npm start &'
-            }
-        }
-
         stage("Tests"){
             steps{
                 sh 'npm test'
